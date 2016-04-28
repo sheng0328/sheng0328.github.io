@@ -4,7 +4,7 @@ caption: /images/2016-04-23-001.jpg
 image: /images/2016-04-23-001.jpg
 teaser: /images/2016-04-23-001.jpg
 header:
-  image: images/2016-04-23-001.jpg
+  image: 2016-04-23-001.jpg
   caption: "/images/2016-04-23-001.jpg"
   teaser: /images/2016-04-23-001.jpg
 ---
