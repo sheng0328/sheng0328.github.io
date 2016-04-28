@@ -64,7 +64,7 @@ author:
   name             : "Eason.liao"
   avatar           : "bio-photo.jpg"
   bio              : "I am an amazing person."
-  location         : "Taiwan"
+  location         :
   email            : "sheng0328.gmail.com"
   uri              : "https://sheng0328.github.io"
   bitbucket        :
