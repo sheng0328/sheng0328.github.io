@@ -8,6 +8,6 @@ header:
 
 ## 我的第一篇POST.
 
-![](images/2016-04-23-001.jpg)
+![](/images/2016-04-23-001.jpg)
 
 single layout.
