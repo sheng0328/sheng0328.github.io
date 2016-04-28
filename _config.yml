@@ -204,3 +204,19 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+# Adding the above to _config.yml will assign the single layout 
+# and enable: author profile, reading time, comments, social sharing links, 
+# and related posts, for all posts.
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
