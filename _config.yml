@@ -6,12 +6,12 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Sciblog
+title: Eason's Blog
 email: airrayagroup@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
-author: AIRRAYA
+url: "https://sheng0328.github.io" # the base hostname & protocol for your site
+author: Eason Liao
 
 # Gems
 gems: [jekyll-paginate]
