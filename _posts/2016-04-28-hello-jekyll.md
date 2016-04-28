@@ -1,7 +1,5 @@
-
 ---
-title: "Post Title"
-teaser: "2016-04-23-001.jpg"
+title: Post Title
 ---
 
 ![](https://sheng0328.github.io/images/2016-04-23-001.jpg)
