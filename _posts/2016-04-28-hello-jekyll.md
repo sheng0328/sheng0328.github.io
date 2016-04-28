@@ -1,6 +1,6 @@
 ---
 title: Post Title
-teaser: https://sheng0328.github.io/images/2016-04-23-001.jpg
+image: https://sheng0328.github.io/images/2016-04-23-001.jpg
 ---
 
 ![](https://sheng0328.github.io/images/2016-04-23-001.jpg)
