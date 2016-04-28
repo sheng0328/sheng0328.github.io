@@ -220,3 +220,7 @@ defaults:
       comments: true
       share: true
       related: true
+
+
+header:
+  teaser: cover-320-1280.jpg
