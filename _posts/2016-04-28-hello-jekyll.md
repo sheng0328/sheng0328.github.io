@@ -1,11 +1,7 @@
 ---
 title: 2016 04 23 Hello Jekyll
-caption: 2016-04-23-001.jpg
-image: 2016-04-23-001.jpg
-teaser: 2016-04-23-001.jpg
 header:
-  image: 2016-04-23-001.jpg
-  teaser: 2016-04-23-001.jpg
+  caption: "My Caption!"
 ---
 
 ## 我的第一篇POST.
