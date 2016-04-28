@@ -204,11 +204,6 @@ compress_html:
   clippings: all
   ignore:
     envs: development
-
-# You also have the option of specifying a solid background-color to use instead of an image.
-excerpt: "This post should display a **header with a solid background color**, if the theme supports it."
-header:
-  overlay_color: "#333"
   
 # Adding the above to _config.yml will assign the single layout 
 # and enable: author profile, reading time, comments, social sharing links, 
