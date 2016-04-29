@@ -215,7 +215,7 @@ defaults:
     values:
       layout: single
       header:
-        overlay_color: "#333"
+        image: https://farm5.staticflickr.com/4140/4939863887_84705982fd_b.jpg
       author_profile: true
       read_time: true
       comments: true
