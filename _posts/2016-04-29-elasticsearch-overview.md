@@ -1,16 +1,17 @@
 ---
 header:
-  teaser: 2016-04-29-elasticsearch-overview.png
+  teaser: elasticsearch.png
 categories:
   - Elasticsearch
 tags:
   - elasticsearch
 ---
 
-![](/images/2016-04-29-elasticsearch-overview.png)
+![](/images/elasticsearch.png)
 
 ## Elasticsearch Overview
 
-* https://github.com/elastic/elasticsearch
+Elasticsearch is a distributed RESTful search engine built for the cloud.
+
 * Github:https://github.com/elastic/elasticsearch
 * Docs:https://www.elastic.co/guide/en/elasticsearch/reference/current/getting-started.html
