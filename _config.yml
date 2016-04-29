@@ -215,7 +215,7 @@ defaults:
     values:
       layout: single
       header:
-        color: "#333"
+        image: header-image.jpg
       author_profile: true
       read_time: true
       comments: true
