@@ -7,10 +7,9 @@ tags:
   - elasticsearch
 ---
 
-![](/images/elasticsearch.png)
-
 ## Elasticsearch Overview
 Elasticsearch is a distributed RESTful search engine built for the cloud.
+
 * Document APIs
 * Search APIs
 * Aggregations
