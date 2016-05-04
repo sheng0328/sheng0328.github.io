@@ -40,12 +40,7 @@ There are two basic ways to run searches: one is by sending search parameters th
 Search request:
 
 ```js
-  GET localhost:9200/bank/_search?q=*&pretty
-```
-
-Response:
-
-```js
+GET localhost:9200/bank/_search?q=*&pretty
 {
   "took" : 63,
   "timed_out" : false,

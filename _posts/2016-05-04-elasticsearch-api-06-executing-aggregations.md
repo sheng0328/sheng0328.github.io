@@ -51,7 +51,7 @@ In SQL, the above aggregation is similar in concept to:
 SELECT state, COUNT(*) FROM bank GROUP BY state ORDER BY COUNT(*) DESC
 ```
 
-Respose:
+Response:
 
 ```js
 "hits" : {
