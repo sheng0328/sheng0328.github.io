@@ -102,3 +102,5 @@ POST localhost:9200/bank/_search?pretty
   "sort": { "balance": { "order": "desc" } }
 }
 ```
+
+### Executing Searches
