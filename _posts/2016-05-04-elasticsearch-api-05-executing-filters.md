@@ -1,5 +1,5 @@
 ---
-title: Elasticsearch API 04 - Executing Filters
+title: Elasticsearch API 05 - Executing Filters
 header:
   teaser: elasticsearch.png
 categories:
@@ -31,4 +31,5 @@ POST localhost:9200/bank/_search?pretty
       }
     }
   }
-}```
+}
+```
