@@ -9,7 +9,6 @@ tags:
 
 ## Elasticsearch RESTful API
 
-=== The Search API
---------------------------------------------------
-curl 'localhost:9200/bank/_search?q=*&pretty'
---------------------------------------------------
+### The Search API
+
+  curl 'localhost:9200/bank/_search?q=*&pretty'
