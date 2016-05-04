@@ -12,13 +12,13 @@ tags:
 ### Loading Sample Dataset
 Download sample dataset [here](https://github.com/bly2k/files/blob/master/accounts.zip?raw=true). Extract file and load it as follows:
 
-```js
+```
 POST localhost:9200/bank/account/_bulk?pretty
 ```
 
 Paste sample dataset at request body as follows:
 
-```js
+```
 {"index":{"_id":"1"}}
 {"account_number":1,"balance":39225,"firstname":"Amber","lastname":"Duke","age":32,"gender":"M","address":"880 Holmes Lane","employer":"Pyrami","email":"amberduke@pyrami.com","city":"Brogan","state":"IL"}
 {"index":{"_id":"6"}}
@@ -28,7 +28,7 @@ Paste sample dataset at request body as follows:
 
 Check indices:
 
-```html
+```
 GET localhost:9200/_cat/indices?v
 
 health index pri rep docs.count docs.deleted store.size pri.store.size
@@ -40,13 +40,13 @@ There are two basic ways to run searches: one is by sending search parameters th
 
 Search request:
 
-```js
+```
   GET localhost:9200/bank/_search?q=*&pretty
 ```
 
 Response:
 
-```js
+```
 {
   "took" : 63,
   "timed_out" : false,
@@ -75,7 +75,7 @@ Response:
 
 Using Query DSL:
 
-```js
+```
 POST localhost:9200/bank/_search?pretty
 {
   "query": { "match_all": {} }
@@ -87,7 +87,7 @@ Elasticsearch provides a JSON-style domain-specific language that you can use to
 
 If size is not specified, it defaults to 10:
 
-```js
+```
 POST localhost:9200/bank/_search?pretty
 {
   "query": { "match_all": {} },
@@ -97,7 +97,7 @@ POST localhost:9200/bank/_search?pretty
 
 Return documents 11 through 20:
 
-```json
+```
  POST localhost:9200/bank/_search?pretty
  {
    "query": { "match_all": {} },
@@ -108,7 +108,7 @@ Return documents 11 through 20:
 
 Sort results by account balance in descending order:
 
-```text
+```
  POST localhost:9200/bank/_search?pretty
  {
    "query": { "match_all": {} },
@@ -117,4 +117,4 @@ Sort results by account balance in descending order:
 ```
 
 ### Executing Searches
-123456
+1111
