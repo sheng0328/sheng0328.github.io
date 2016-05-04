@@ -10,9 +10,9 @@ tags:
 
 ## Executing Searches
 
-This example shows how to return two fields, account_number and balance (inside of _source), from the search:
+This example shows how to return two fields, account_number and balance (inside of `_source`), from the search:
 
-```json
+```js
 POST localhost:9200/bank/_search?pretty
 {
   "query": { "match_all": {} },
@@ -22,7 +22,7 @@ POST localhost:9200/bank/_search?pretty
 
 This example returns the account numbered 20:
 
-```json
+```js
 POST localhost:9200/bank/_search?pretty
 {
   "query": { "match": { "account_number": 20 } }
@@ -31,7 +31,7 @@ POST localhost:9200/bank/_search?pretty
 
 This example returns all accounts containing the term "mill" in the address:
 
-```json
+```js
 POST localhost:9200/bank/_search?pretty
 {
   "query": { "match": { "address": "mill" } }
@@ -40,7 +40,7 @@ POST localhost:9200/bank/_search?pretty
 
 This example returns all accounts containing the term "mill" or "lane" in the address:
 
-```json
+```js
 POST localhost:9200/bank/_search?pretty
 {
   "query": { "match": { "address": "mill lane" } }
@@ -49,7 +49,7 @@ POST localhost:9200/bank/_search?pretty
 
 This example is a variant of match (match_phrase) that returns all accounts containing the phrase "mill lane" in the address:
 
-```json
+```js
 POST localhost:9200/bank/_search?pretty
 {
   "query": { "match_phrase": { "address": "mill lane" } }
@@ -58,7 +58,7 @@ POST localhost:9200/bank/_search?pretty
 
 This example composes two match queries and returns all accounts containing "mill" and "lane" in the address:
 
-```json
+```js
 POST localhost:9200/bank/_search?pretty
 {
   "query": {
@@ -74,7 +74,7 @@ POST localhost:9200/bank/_search?pretty
 
 In contrast, this example composes two match queries and returns all accounts containing "mill" or "lane" in the address:
 
-```json
+```js
 POST localhost:9200/bank/_search?pretty
 {
   "query": {
@@ -90,7 +90,7 @@ POST localhost:9200/bank/_search?pretty
 
 This example composes two match queries and returns all accounts that contain neither "mill" nor "lane" in the address:
 
-```json
+```js
 POST localhost:9200/bank/_search?pretty
 {
   "query": {
@@ -106,9 +106,9 @@ POST localhost:9200/bank/_search?pretty
 
 This example composes two match queries and returns all accounts that contain neither "mill" nor "lane" in the address:
 
-```json
+```js
 POST localhost:9200/bank/_search?pretty
-{{
+{
   "query": {
     "bool": {
       "must": [
