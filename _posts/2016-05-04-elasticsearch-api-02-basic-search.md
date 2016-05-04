@@ -13,11 +13,6 @@ Download sample dataset [here](https://github.com/bly2k/files/blob/master/accoun
 
 ```js
 POST localhost:9200/bank/account/_bulk?pretty
-```
-
-Paste sample dataset at request body as follows:
-
-```js
 {"index":{"_id":"1"}}
 {"account_number":1,"balance":39225,"firstname":"Amber","lastname":"Duke","age":32,"gender":"M","address":"880 Holmes Lane","employer":"Pyrami","email":"amberduke@pyrami.com","city":"Brogan","state":"IL"}
 {"index":{"_id":"6"}}
@@ -41,6 +36,11 @@ Search request:
 
 ```js
 GET localhost:9200/bank/_search?q=*&pretty
+```
+
+Response:
+
+```js
 {
   "took" : 63,
   "timed_out" : false,
