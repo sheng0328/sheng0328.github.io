@@ -11,10 +11,13 @@ tags:
 
 ### Loading Sample Dataset
 Download sample dataset [here](https://github.com/bly2k/files/blob/master/accounts.zip?raw=true). Extract file and load it as follows:
+
 ```js
 POST localhost:9200/bank/account/_bulk?pretty
 ```
+
 Paste sample dataset at request body as follows:
+
 ```js
 {"index":{"_id":"1"}}
 {"account_number":1,"balance":39225,"firstname":"Amber","lastname":"Duke","age":32,"gender":"M","address":"880 Holmes Lane","employer":"Pyrami","email":"amberduke@pyrami.com","city":"Brogan","state":"IL"}
@@ -22,7 +25,9 @@ Paste sample dataset at request body as follows:
 {"account_number":6,"balance":5686,"firstname":"Hattie","lastname":"Bond","age":36,"gender":"M","address":"671 Bristol Street","employer":"Netagy","email":"hattiebond@netagy.com","city":"Dante","state":"TN"}
 ...
 ```
+
 Check indices:
+
 ```html
 GET localhost:9200/_cat/indices?v
 
@@ -34,10 +39,13 @@ yellow bank    5   1       1000            0    424.4kb        424.4kb
 There are two basic ways to run searches: one is by sending search parameters through the ```REST request URI``` and the other by sending them through the ```REST request body```.
 
 Search request:
+
 ```js
   GET localhost:9200/bank/_search?q=*&pretty
 ```
+
 Response:
+
 ```js
 {
   "took" : 63,
@@ -64,7 +72,9 @@ Response:
       "_index" : "bank",
       "_type" : "account",
 ```
+
 Using Query DSL:
+
 ```js
 POST localhost:9200/bank/_search?pretty
 {
@@ -76,6 +86,7 @@ POST localhost:9200/bank/_search?pretty
 Elasticsearch provides a JSON-style domain-specific language that you can use to execute queries. This is referred to as the ```Query DSL```. The query language is quite comprehensive and can be intimidating at first glance but the best way to actually learn it is to start with a few basic examples.
 
 If size is not specified, it defaults to 10:
+
 ```js
 POST localhost:9200/bank/_search?pretty
 {
@@ -85,6 +96,7 @@ POST localhost:9200/bank/_search?pretty
 ```
 
 Return documents 11 through 20:
+
 ```json
  POST localhost:9200/bank/_search?pretty
  {
@@ -95,6 +107,7 @@ Return documents 11 through 20:
 ```
 
 Sort results by account balance in descending order:
+
 ```text
  POST localhost:9200/bank/_search?pretty
  {
@@ -104,3 +117,4 @@ Sort results by account balance in descending order:
 ```
 
 ### Executing Searches
+123456
