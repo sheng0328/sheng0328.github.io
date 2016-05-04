@@ -11,11 +11,11 @@ tags:
 
 ### Loading Sample Dataset
 Download sample dataset [here](https://github.com/bly2k/files/blob/master/accounts.zip?raw=true). Extract file and load it as follows:
-```
+```js
 POST localhost:9200/bank/account/_bulk?pretty
 ```
 Paste sample dataset at request body as follows:
-```
+```js
 {"index":{"_id":"1"}}
 {"account_number":1,"balance":39225,"firstname":"Amber","lastname":"Duke","age":32,"gender":"M","address":"880 Holmes Lane","employer":"Pyrami","email":"amberduke@pyrami.com","city":"Brogan","state":"IL"}
 {"index":{"_id":"6"}}
@@ -23,7 +23,7 @@ Paste sample dataset at request body as follows:
 ...
 ```
 Check indices:
-```
+```html
 GET localhost:9200/_cat/indices?v
 
 health index pri rep docs.count docs.deleted store.size pri.store.size
@@ -34,11 +34,11 @@ yellow bank    5   1       1000            0    424.4kb        424.4kb
 There are two basic ways to run searches: one is by sending search parameters through the ```REST request URI``` and the other by sending them through the ```REST request body```.
 
 Search request:
-```
+```js
   GET localhost:9200/bank/_search?q=*&pretty
 ```
 Response:
-```
+```js
 {
   "took" : 63,
   "timed_out" : false,
@@ -65,7 +65,7 @@ Response:
       "_type" : "account",
 ```
 Using Query DSL:
-```
+```js
 POST localhost:9200/bank/_search?pretty
 {
   "query": { "match_all": {} }
@@ -76,7 +76,7 @@ POST localhost:9200/bank/_search?pretty
 Elasticsearch provides a JSON-style domain-specific language that you can use to execute queries. This is referred to as the ```Query DSL```. The query language is quite comprehensive and can be intimidating at first glance but the best way to actually learn it is to start with a few basic examples.
 
 If size is not specified, it defaults to 10:
-```
+```js
 POST localhost:9200/bank/_search?pretty
 {
   "query": { "match_all": {} },
@@ -85,7 +85,7 @@ POST localhost:9200/bank/_search?pretty
 ```
 
 Return documents 11 through 20:
-```
+```js
 POST localhost:9200/bank/_search?pretty
 {
   "query": { "match_all": {} },
@@ -95,7 +95,7 @@ POST localhost:9200/bank/_search?pretty
 ```
 
 Sort results by account balance in descending order:
-```
+```js
 POST localhost:9200/bank/_search?pretty
 {
   "query": { "match_all": {} },
