@@ -56,6 +56,16 @@ POST localhost:9200/bank/_search?pretty
 }
 ```
 
+## Bool Query
+
+The `bool` query allows us to compose smaller queries into bigger queries using boolean logic.
+
+The occurrence types are:
+* `must` - The clause (query) must appear in matching documents and will contribute to the score.
+* `filter` - The clause (query) must appear in matching documents. However unlike must the score of the query will be ignored.
+* `should`- The clause (query) should appear in the matching document. In a boolean query with no must or filter clauses, one or more should clauses must match a document. The minimum number of should clauses to match can be set using the minimum_should_match parameter.
+* `must_not` - The clause (query) must not appear in the matching documents.
+
 This example composes two match queries and returns all accounts containing "mill" and "lane" in the address:
 
 ```js
