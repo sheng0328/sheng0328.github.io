@@ -1,5 +1,5 @@
 ---
-title: Elasticsearch API (03) Query DSL
+title: Elasticsearch API » (03) Query DSL
 header:
   teaser: elasticsearch.png
 categories:

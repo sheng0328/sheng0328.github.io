@@ -1,5 +1,5 @@
 ---
-title: Elasticsearch API (02) Basic Search
+title: Elasticsearch API » (02) Basic Search
 header:
   teaser: elasticsearch.png
 categories:
