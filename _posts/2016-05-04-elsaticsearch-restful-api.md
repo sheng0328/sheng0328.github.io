@@ -85,22 +85,22 @@ POST localhost:9200/bank/_search?pretty
 ```
 
 Return documents 11 through 20:
-```js
-POST localhost:9200/bank/_search?pretty
-{
-  "query": { "match_all": {} },
-  "from": 10,
-  "size": 10
-}
+```json
+ POST localhost:9200/bank/_search?pretty
+ {
+   "query": { "match_all": {} },
+   "from": 10,
+   "size": 10
+ }
 ```
 
 Sort results by account balance in descending order:
-```js
-POST localhost:9200/bank/_search?pretty
-{
-  "query": { "match_all": {} },
-  "sort": { "balance": { "order": "desc" } }
-}
+```text
+ POST localhost:9200/bank/_search?pretty
+ {
+   "query": { "match_all": {} },
+   "sort": { "balance": { "order": "desc" } }
+ }
 ```
 
 ### Executing Searches
