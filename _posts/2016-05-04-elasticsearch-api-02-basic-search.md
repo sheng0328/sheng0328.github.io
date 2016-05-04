@@ -1,5 +1,5 @@
 ---
-title: Elasticsearch API » (02) Basic Search
+title: Elasticsearch API 02 - Basic Search
 header:
   teaser: elasticsearch.png
 categories:
@@ -11,13 +11,13 @@ tags:
 ## Loading Sample Dataset
 Download sample dataset [here](https://github.com/bly2k/files/blob/master/accounts.zip?raw=true). Extract file and load it as follows:
 
-```
+```json
 POST localhost:9200/bank/account/_bulk?pretty
 ```
 
 Paste sample dataset at request body as follows:
 
-```
+```json
 {"index":{"_id":"1"}}
 {"account_number":1,"balance":39225,"firstname":"Amber","lastname":"Duke","age":32,"gender":"M","address":"880 Holmes Lane","employer":"Pyrami","email":"amberduke@pyrami.com","city":"Brogan","state":"IL"}
 {"index":{"_id":"6"}}
@@ -27,7 +27,7 @@ Paste sample dataset at request body as follows:
 
 Check indices:
 
-```
+```json
 GET localhost:9200/_cat/indices?v
 
 health index pri rep docs.count docs.deleted store.size pri.store.size
@@ -39,13 +39,13 @@ There are two basic ways to run searches: one is by sending search parameters th
 
 Search request:
 
-```
+```json
   GET localhost:9200/bank/_search?q=*&pretty
 ```
 
 Response:
 
-```
+```json
 {
   "took" : 63,
   "timed_out" : false,
@@ -74,7 +74,7 @@ Response:
 
 Using Query DSL:
 
-```
+```json
 POST localhost:9200/bank/_search?pretty
 {
   "query": { "match_all": {} }

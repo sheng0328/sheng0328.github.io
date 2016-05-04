@@ -1,5 +1,5 @@
 ---
-title: Elasticsearch API » (03) Query DSL
+title: Elasticsearch API 03 - Query DSL
 header:
   teaser: elasticsearch.png
 categories:
@@ -14,7 +14,7 @@ Elasticsearch provides a JSON-style domain-specific language that you can use to
 
 If size is not specified, it defaults to 10:
 
-```
+```json
 POST localhost:9200/bank/_search?pretty
 {
   "query": { "match_all": {} },
@@ -24,7 +24,7 @@ POST localhost:9200/bank/_search?pretty
 
 Return documents 11 through 20:
 
-```
+```json
  POST localhost:9200/bank/_search?pretty
  {
    "query": { "match_all": {} },
@@ -35,7 +35,7 @@ Return documents 11 through 20:
 
 Sort results by account balance in descending order:
 
-```
+```json
  POST localhost:9200/bank/_search?pretty
  {
    "query": { "match_all": {} },
