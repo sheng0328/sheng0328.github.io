@@ -1,4 +1,5 @@
 ---
+title: Elasticsearch RESTful API
 header:
   teaser: elasticsearch.png
 categories:
